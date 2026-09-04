@@ -1,0 +1,4867 @@
+{
+  "version": "1",
+  "duration": 90,
+  "hz": 60,
+  "aggregates": [
+    {
+      "policy": "strong",
+      "runs": 40,
+      "capital": {
+        "min": 229926009,
+        "median": 296573345,
+        "max": 301815785
+      },
+      "stageCounts": [
+        0,
+        0,
+        0,
+        0,
+        40
+      ],
+      "firstPurchase": {
+        "min": 12,
+        "median": 12,
+        "max": 17.967
+      },
+      "averageLosses": 0.775,
+      "averageAssets": 5
+    },
+    {
+      "policy": "ordinary",
+      "runs": 40,
+      "capital": {
+        "min": 12080264,
+        "median": 69246854.5,
+        "max": 229422429
+      },
+      "stageCounts": [
+        0,
+        0,
+        0,
+        32,
+        8
+      ],
+      "firstPurchase": {
+        "min": 12,
+        "median": 12,
+        "max": 23.783
+      },
+      "averageLosses": 8.575,
+      "averageAssets": 4.225
+    },
+    {
+      "policy": "cash-only",
+      "runs": 40,
+      "capital": {
+        "min": 121110000,
+        "median": 121110000,
+        "max": 121110000
+      },
+      "stageCounts": [
+        0,
+        0,
+        0,
+        0,
+        40
+      ],
+      "firstPurchase": {
+        "min": null,
+        "median": null,
+        "max": null
+      },
+      "averageLosses": 0,
+      "averageAssets": 0
+    },
+    {
+      "policy": "stationary",
+      "runs": 40,
+      "capital": {
+        "min": 21245,
+        "median": 84053,
+        "max": 902614
+      },
+      "stageCounts": [
+        24,
+        16,
+        0,
+        0,
+        0
+      ],
+      "firstPurchase": {
+        "min": 12,
+        "median": 40.583,
+        "max": 85.15
+      },
+      "averageLosses": 28.95,
+      "averageAssets": 1.15
+    }
+  ],
+  "outcomes": [
+    {
+      "seed": "balance-00",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 214040785,
+      "netWorth": 291815785,
+      "peakNetWorth": 291815785,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 0,
+      "collected": 77,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 60.4
+        },
+        {
+          "stage": 4,
+          "time": 77.667
+        }
+      ]
+    },
+    {
+      "seed": "balance-01",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 152151009,
+      "netWorth": 229926009,
+      "peakNetWorth": 229926009,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 3,
+      "collected": 73,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 23.783
+        },
+        {
+          "stage": 2,
+          "time": 42.733
+        },
+        {
+          "stage": 3,
+          "time": 61.167
+        },
+        {
+          "stage": 4,
+          "time": 78.75
+        }
+      ]
+    },
+    {
+      "seed": "balance-02",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 224040785,
+      "netWorth": 301815785,
+      "peakNetWorth": 301815785,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 0,
+      "collected": 78,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 60.4
+        },
+        {
+          "stage": 4,
+          "time": 77.667
+        }
+      ]
+    },
+    {
+      "seed": "balance-03",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 181194195,
+      "netWorth": 258969195,
+      "peakNetWorth": 272110701,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 2,
+      "collected": 76,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 60.4
+        },
+        {
+          "stage": 4,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-04",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 218975709,
+      "netWorth": 296750709,
+      "peakNetWorth": 296750709,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 1,
+      "collected": 77,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 43.817
+        },
+        {
+          "stage": 3,
+          "time": 61.233
+        },
+        {
+          "stage": 4,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-05",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 223940785,
+      "netWorth": 301715785,
+      "peakNetWorth": 301715785,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 0,
+      "collected": 76,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 23.783
+        },
+        {
+          "stage": 2,
+          "time": 42.733
+        },
+        {
+          "stage": 3,
+          "time": 60.4
+        },
+        {
+          "stage": 4,
+          "time": 77.683
+        }
+      ]
+    },
+    {
+      "seed": "balance-06",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 224040785,
+      "netWorth": 301815785,
+      "peakNetWorth": 301815785,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 0,
+      "collected": 78,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 60.4
+        },
+        {
+          "stage": 4,
+          "time": 77.667
+        }
+      ]
+    },
+    {
+      "seed": "balance-07",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 218746139,
+      "netWorth": 296521139,
+      "peakNetWorth": 296521139,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 1,
+      "collected": 77,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 61.417
+        },
+        {
+          "stage": 4,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-08",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 218553958,
+      "netWorth": 296328958,
+      "peakNetWorth": 296328958,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 1,
+      "collected": 77,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 61.417
+        },
+        {
+          "stage": 4,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-09",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 224040785,
+      "netWorth": 301815785,
+      "peakNetWorth": 301815785,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 0,
+      "collected": 78,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 60.4
+        },
+        {
+          "stage": 4,
+          "time": 77.667
+        }
+      ]
+    },
+    {
+      "seed": "balance-10",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 170594121,
+      "netWorth": 248369121,
+      "peakNetWorth": 248369121,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 2,
+      "collected": 76,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 43.817
+        },
+        {
+          "stage": 3,
+          "time": 61.2
+        },
+        {
+          "stage": 4,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-11",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 218488877,
+      "netWorth": 296263877,
+      "peakNetWorth": 296263877,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 1,
+      "collected": 76,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 25.467
+        },
+        {
+          "stage": 2,
+          "time": 44.883
+        },
+        {
+          "stage": 3,
+          "time": 61.417
+        },
+        {
+          "stage": 4,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-12",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 218484265,
+      "netWorth": 296259265,
+      "peakNetWorth": 296259265,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 1,
+      "collected": 75,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 25.267
+        },
+        {
+          "stage": 2,
+          "time": 44.883
+        },
+        {
+          "stage": 3,
+          "time": 61.417
+        },
+        {
+          "stage": 4,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-13",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 189892871,
+      "netWorth": 267667871,
+      "peakNetWorth": 267667871,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 1,
+      "collected": 75,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 62.4
+        },
+        {
+          "stage": 4,
+          "time": 78.75
+        }
+      ]
+    },
+    {
+      "seed": "balance-14",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 224040785,
+      "netWorth": 301815785,
+      "peakNetWorth": 301815785,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 0,
+      "collected": 78,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 60.4
+        },
+        {
+          "stage": 4,
+          "time": 77.667
+        }
+      ]
+    },
+    {
+      "seed": "balance-15",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 219040785,
+      "netWorth": 296815785,
+      "peakNetWorth": 296815785,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 0,
+      "collected": 77,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 60.4
+        },
+        {
+          "stage": 4,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-16",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 224040785,
+      "netWorth": 301815785,
+      "peakNetWorth": 301815785,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 0,
+      "collected": 78,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 60.4
+        },
+        {
+          "stage": 4,
+          "time": 77.667
+        }
+      ]
+    },
+    {
+      "seed": "balance-17",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 198048633,
+      "netWorth": 275823633,
+      "peakNetWorth": 275823633,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 3,
+      "collected": 75,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 23.783
+        },
+        {
+          "stage": 2,
+          "time": 42.733
+        },
+        {
+          "stage": 3,
+          "time": 60.4
+        },
+        {
+          "stage": 4,
+          "time": 77.667
+        }
+      ]
+    },
+    {
+      "seed": "balance-18",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 185671242,
+      "netWorth": 263446242,
+      "peakNetWorth": 263446242,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 1,
+      "collected": 77,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 60.4
+        },
+        {
+          "stage": 4,
+          "time": 77.667
+        }
+      ]
+    },
+    {
+      "seed": "balance-19",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 218510093,
+      "netWorth": 296285093,
+      "peakNetWorth": 296285093,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 0,
+      "collected": 78,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 61.417
+        },
+        {
+          "stage": 4,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-20",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 198801209,
+      "netWorth": 276576209,
+      "peakNetWorth": 276576209,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 1,
+      "collected": 75,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 61.417
+        },
+        {
+          "stage": 4,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-21",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 218850551,
+      "netWorth": 296625551,
+      "peakNetWorth": 296625551,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 1,
+      "collected": 76,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 61.417
+        },
+        {
+          "stage": 4,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-22",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 224040785,
+      "netWorth": 301815785,
+      "peakNetWorth": 301815785,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 0,
+      "collected": 78,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 60.4
+        },
+        {
+          "stage": 4,
+          "time": 77.667
+        }
+      ]
+    },
+    {
+      "seed": "balance-23",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 218990785,
+      "netWorth": 296765785,
+      "peakNetWorth": 296765785,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 0,
+      "collected": 76,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 24.517
+        },
+        {
+          "stage": 2,
+          "time": 43.817
+        },
+        {
+          "stage": 3,
+          "time": 61.167
+        },
+        {
+          "stage": 4,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-24",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 213710199,
+      "netWorth": 291485199,
+      "peakNetWorth": 291485199,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 1,
+      "collected": 76,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 61.417
+        },
+        {
+          "stage": 4,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-25",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 219040785,
+      "netWorth": 296815785,
+      "peakNetWorth": 296815785,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 0,
+      "collected": 77,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 60.933
+        },
+        {
+          "stage": 4,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-26",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 153445684,
+      "netWorth": 231220684,
+      "peakNetWorth": 231220684,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 3,
+      "collected": 75,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 63.4
+        },
+        {
+          "stage": 4,
+          "time": 79.667
+        }
+      ]
+    },
+    {
+      "seed": "balance-27",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 218490337,
+      "netWorth": 296265337,
+      "peakNetWorth": 296265337,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 1,
+      "collected": 76,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 23.783
+        },
+        {
+          "stage": 2,
+          "time": 44.833
+        },
+        {
+          "stage": 3,
+          "time": 61.417
+        },
+        {
+          "stage": 4,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-28",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 224040785,
+      "netWorth": 301815785,
+      "peakNetWorth": 301815785,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 0,
+      "collected": 78,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 60.4
+        },
+        {
+          "stage": 4,
+          "time": 77.667
+        }
+      ]
+    },
+    {
+      "seed": "balance-29",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 224040785,
+      "netWorth": 301815785,
+      "peakNetWorth": 301815785,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 0,
+      "collected": 78,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 60.4
+        },
+        {
+          "stage": 4,
+          "time": 77.667
+        }
+      ]
+    },
+    {
+      "seed": "balance-30",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 224040785,
+      "netWorth": 301815785,
+      "peakNetWorth": 301815785,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 0,
+      "collected": 78,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 60.4
+        },
+        {
+          "stage": 4,
+          "time": 77.667
+        }
+      ]
+    },
+    {
+      "seed": "balance-31",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 219040785,
+      "netWorth": 296815785,
+      "peakNetWorth": 296815785,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 0,
+      "collected": 77,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 60.4
+        },
+        {
+          "stage": 4,
+          "time": 77.667
+        }
+      ]
+    },
+    {
+      "seed": "balance-32",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 219040785,
+      "netWorth": 296815785,
+      "peakNetWorth": 296815785,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 0,
+      "collected": 77,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 60.4
+        },
+        {
+          "stage": 4,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-33",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 218484684,
+      "netWorth": 296259684,
+      "peakNetWorth": 296259684,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 17.967,
+      "losses": 1,
+      "collected": 77,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 44.883
+        },
+        {
+          "stage": 3,
+          "time": 61.417
+        },
+        {
+          "stage": 4,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-34",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 224040785,
+      "netWorth": 301815785,
+      "peakNetWorth": 301815785,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 0,
+      "collected": 78,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 60.4
+        },
+        {
+          "stage": 4,
+          "time": 77.667
+        }
+      ]
+    },
+    {
+      "seed": "balance-35",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 153979924,
+      "netWorth": 231754924,
+      "peakNetWorth": 231754924,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 2,
+      "collected": 75,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.733
+        },
+        {
+          "stage": 3,
+          "time": 60.4
+        },
+        {
+          "stage": 4,
+          "time": 78.75
+        }
+      ]
+    },
+    {
+      "seed": "balance-36",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 169812493,
+      "netWorth": 247587493,
+      "peakNetWorth": 247587493,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 1,
+      "collected": 74,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 23.783
+        },
+        {
+          "stage": 2,
+          "time": 44.883
+        },
+        {
+          "stage": 3,
+          "time": 63.767
+        },
+        {
+          "stage": 4,
+          "time": 80.75
+        }
+      ]
+    },
+    {
+      "seed": "balance-37",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 192418845,
+      "netWorth": 270193845,
+      "peakNetWorth": 270193845,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 2,
+      "collected": 75,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 44.7
+        },
+        {
+          "stage": 3,
+          "time": 61.417
+        },
+        {
+          "stage": 4,
+          "time": 78.75
+        }
+      ]
+    },
+    {
+      "seed": "balance-38",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 218990785,
+      "netWorth": 296765785,
+      "peakNetWorth": 296765785,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 0,
+      "collected": 76,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 61.167
+        },
+        {
+          "stage": 4,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-39",
+      "policy": "strong",
+      "elapsed": 90,
+      "cash": 219013315,
+      "netWorth": 296788315,
+      "peakNetWorth": 296788315,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 1,
+      "collected": 76,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 43.783
+        },
+        {
+          "stage": 3,
+          "time": 61.05
+        },
+        {
+          "stage": 4,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-00",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 16568525,
+      "netWorth": 94343525,
+      "peakNetWorth": 94343525,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 6,
+      "collected": 68,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 27.733
+        },
+        {
+          "stage": 2,
+          "time": 52.25
+        },
+        {
+          "stage": 3,
+          "time": 71.883
+        }
+      ]
+    },
+    {
+      "seed": "balance-01",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 46332185,
+      "netWorth": 74107185,
+      "peakNetWorth": 79433301,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 17.967,
+      "losses": 10,
+      "collected": 65,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 30.633
+        },
+        {
+          "stage": 2,
+          "time": 49.117
+        },
+        {
+          "stage": 3,
+          "time": 74.067
+        }
+      ]
+    },
+    {
+      "seed": "balance-02",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 12860730,
+      "netWorth": 90635730,
+      "peakNetWorth": 90635730,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 17.967,
+      "losses": 7,
+      "collected": 65,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 30.633
+        },
+        {
+          "stage": 2,
+          "time": 51.2
+        },
+        {
+          "stage": 3,
+          "time": 70.233
+        }
+      ]
+    },
+    {
+      "seed": "balance-03",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 30352233,
+      "netWorth": 108127233,
+      "peakNetWorth": 108127233,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 6,
+      "collected": 65,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 28.367
+        },
+        {
+          "stage": 2,
+          "time": 50.167
+        },
+        {
+          "stage": 3,
+          "time": 70.233
+        },
+        {
+          "stage": 4,
+          "time": 88.733
+        }
+      ]
+    },
+    {
+      "seed": "balance-04",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 35286482,
+      "netWorth": 38061482,
+      "peakNetWorth": 38061482,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics"
+      ],
+      "firstPurchase": 17.967,
+      "losses": 8,
+      "collected": 61,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 37.317
+        },
+        {
+          "stage": 2,
+          "time": 59.8
+        },
+        {
+          "stage": 3,
+          "time": 81.517
+        }
+      ]
+    },
+    {
+      "seed": "balance-05",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 23381381,
+      "netWorth": 101156381,
+      "peakNetWorth": 101156381,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 6,
+      "collected": 69,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 23.783
+        },
+        {
+          "stage": 2,
+          "time": 46.667
+        },
+        {
+          "stage": 3,
+          "time": 70.833
+        },
+        {
+          "stage": 4,
+          "time": 89.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-06",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 41073258,
+      "netWorth": 68848258,
+      "peakNetWorth": 68848258,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 23.783,
+      "losses": 11,
+      "collected": 62,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 38.4
+        },
+        {
+          "stage": 2,
+          "time": 59.4
+        },
+        {
+          "stage": 3,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-07",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 25018728,
+      "netWorth": 27793728,
+      "peakNetWorth": 27793728,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics"
+      ],
+      "firstPurchase": 17.967,
+      "losses": 14,
+      "collected": 62,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 37.3
+        },
+        {
+          "stage": 2,
+          "time": 57.633
+        },
+        {
+          "stage": 3,
+          "time": 83.35
+        }
+      ]
+    },
+    {
+      "seed": "balance-08",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 35005381,
+      "netWorth": 62780381,
+      "peakNetWorth": 62780381,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 12,
+      "losses": 10,
+      "collected": 63,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 28.367
+        },
+        {
+          "stage": 2,
+          "time": 52.633
+        },
+        {
+          "stage": 3,
+          "time": 72.15
+        }
+      ]
+    },
+    {
+      "seed": "balance-09",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 41709677,
+      "netWorth": 69484677,
+      "peakNetWorth": 69484677,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 12,
+      "losses": 7,
+      "collected": 63,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 24.733
+        },
+        {
+          "stage": 2,
+          "time": 50.167
+        },
+        {
+          "stage": 3,
+          "time": 72.15
+        }
+      ]
+    },
+    {
+      "seed": "balance-10",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 37025939,
+      "netWorth": 64800939,
+      "peakNetWorth": 64800939,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 17.967,
+      "losses": 13,
+      "collected": 64,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 27.233
+        },
+        {
+          "stage": 2,
+          "time": 56.367
+        },
+        {
+          "stage": 3,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-11",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 4068543,
+      "netWorth": 31843543,
+      "peakNetWorth": 31843543,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 23.783,
+      "losses": 12,
+      "collected": 60,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 32.867
+        },
+        {
+          "stage": 2,
+          "time": 59.4
+        },
+        {
+          "stage": 3,
+          "time": 79.467
+        }
+      ]
+    },
+    {
+      "seed": "balance-12",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 35087696,
+      "netWorth": 62862696,
+      "peakNetWorth": 62862696,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 23.783,
+      "losses": 10,
+      "collected": 66,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 32.867
+        },
+        {
+          "stage": 2,
+          "time": 53.283
+        },
+        {
+          "stage": 3,
+          "time": 75.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-13",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 56247699,
+      "netWorth": 134022699,
+      "peakNetWorth": 134022699,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 5,
+      "collected": 63,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 45.95
+        },
+        {
+          "stage": 3,
+          "time": 70.233
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-14",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 72217770,
+      "netWorth": 149992770,
+      "peakNetWorth": 149992770,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 5,
+      "collected": 71,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 23.783
+        },
+        {
+          "stage": 2,
+          "time": 42.733
+        },
+        {
+          "stage": 3,
+          "time": 67.333
+        },
+        {
+          "stage": 4,
+          "time": 85.5
+        }
+      ]
+    },
+    {
+      "seed": "balance-15",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 52670714,
+      "netWorth": 80445714,
+      "peakNetWorth": 81767895,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 17.967,
+      "losses": 6,
+      "collected": 63,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 29.5
+        },
+        {
+          "stage": 2,
+          "time": 49.117
+        },
+        {
+          "stage": 3,
+          "time": 73.15
+        }
+      ]
+    },
+    {
+      "seed": "balance-16",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 17564562,
+      "netWorth": 95339562,
+      "peakNetWorth": 95339562,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 8,
+      "collected": 66,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 30.633
+        },
+        {
+          "stage": 2,
+          "time": 53.283
+        },
+        {
+          "stage": 3,
+          "time": 74.483
+        }
+      ]
+    },
+    {
+      "seed": "balance-17",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 26579118,
+      "netWorth": 54354118,
+      "peakNetWorth": 54354118,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 23.783,
+      "losses": 7,
+      "collected": 66,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 31.75
+        },
+        {
+          "stage": 2,
+          "time": 53.283
+        },
+        {
+          "stage": 3,
+          "time": 79.667
+        }
+      ]
+    },
+    {
+      "seed": "balance-18",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 7690065,
+      "netWorth": 85465065,
+      "peakNetWorth": 101587723,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 9,
+      "collected": 66,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 24.933
+        },
+        {
+          "stage": 2,
+          "time": 46.75
+        },
+        {
+          "stage": 3,
+          "time": 68.167
+        },
+        {
+          "stage": 4,
+          "time": 84.433
+        }
+      ]
+    },
+    {
+      "seed": "balance-19",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 5317711,
+      "netWorth": 83092711,
+      "peakNetWorth": 94397541,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 23.783,
+      "losses": 6,
+      "collected": 66,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 32.867
+        },
+        {
+          "stage": 2,
+          "time": 51.567
+        },
+        {
+          "stage": 3,
+          "time": 71.2
+        }
+      ]
+    },
+    {
+      "seed": "balance-20",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 21181233,
+      "netWorth": 48956233,
+      "peakNetWorth": 48956233,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 12,
+      "losses": 10,
+      "collected": 63,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 28.367
+        },
+        {
+          "stage": 2,
+          "time": 57.383
+        },
+        {
+          "stage": 3,
+          "time": 80.6
+        }
+      ]
+    },
+    {
+      "seed": "balance-21",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 20816150,
+      "netWorth": 48591150,
+      "peakNetWorth": 48591150,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 17.967,
+      "losses": 9,
+      "collected": 65,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 35.833
+        },
+        {
+          "stage": 2,
+          "time": 59.4
+        },
+        {
+          "stage": 3,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-22",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 2299413,
+      "netWorth": 30074413,
+      "peakNetWorth": 30074413,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 12,
+      "losses": 12,
+      "collected": 63,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 30.45
+        },
+        {
+          "stage": 2,
+          "time": 59.883
+        },
+        {
+          "stage": 3,
+          "time": 80.417
+        }
+      ]
+    },
+    {
+      "seed": "balance-23",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 48557031,
+      "netWorth": 76332031,
+      "peakNetWorth": 76332031,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 23.783,
+      "losses": 7,
+      "collected": 67,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 29.283
+        },
+        {
+          "stage": 2,
+          "time": 49.117
+        },
+        {
+          "stage": 3,
+          "time": 70.583
+        }
+      ]
+    },
+    {
+      "seed": "balance-24",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 34939668,
+      "netWorth": 62714668,
+      "peakNetWorth": 62714668,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 12,
+      "losses": 8,
+      "collected": 63,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 25.9
+        },
+        {
+          "stage": 2,
+          "time": 53.283
+        },
+        {
+          "stage": 3,
+          "time": 75
+        }
+      ]
+    },
+    {
+      "seed": "balance-25",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 10515332,
+      "netWorth": 88290332,
+      "peakNetWorth": 88290332,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 9,
+      "collected": 68,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 23.783
+        },
+        {
+          "stage": 2,
+          "time": 50.167
+        },
+        {
+          "stage": 3,
+          "time": 69.267
+        }
+      ]
+    },
+    {
+      "seed": "balance-26",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 50788814,
+      "netWorth": 78563814,
+      "peakNetWorth": 78563814,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 17.967,
+      "losses": 7,
+      "collected": 65,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 27.233
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 76.883
+        }
+      ]
+    },
+    {
+      "seed": "balance-27",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 14614511,
+      "netWorth": 17389511,
+      "peakNetWorth": 17389511,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics"
+      ],
+      "firstPurchase": 12,
+      "losses": 10,
+      "collected": 63,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 27.233
+        },
+        {
+          "stage": 2,
+          "time": 62.117
+        },
+        {
+          "stage": 3,
+          "time": 86
+        }
+      ]
+    },
+    {
+      "seed": "balance-28",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 16266970,
+      "netWorth": 94041970,
+      "peakNetWorth": 94041970,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 17.967,
+      "losses": 7,
+      "collected": 67,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 28.417
+        },
+        {
+          "stage": 2,
+          "time": 50.167
+        },
+        {
+          "stage": 3,
+          "time": 71.6
+        }
+      ]
+    },
+    {
+      "seed": "balance-29",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 42539085,
+      "netWorth": 120314085,
+      "peakNetWorth": 120314085,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 7,
+      "collected": 64,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 24.933
+        },
+        {
+          "stage": 2,
+          "time": 51.2
+        },
+        {
+          "stage": 3,
+          "time": 70.233
+        },
+        {
+          "stage": 4,
+          "time": 88.35
+        }
+      ]
+    },
+    {
+      "seed": "balance-30",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 65957288,
+      "netWorth": 93732288,
+      "peakNetWorth": 101734554,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 12,
+      "losses": 8,
+      "collected": 67,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 28.367
+        },
+        {
+          "stage": 2,
+          "time": 51.2
+        },
+        {
+          "stage": 3,
+          "time": 70.233
+        },
+        {
+          "stage": 4,
+          "time": 88.833
+        }
+      ]
+    },
+    {
+      "seed": "balance-31",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 21494286,
+      "netWorth": 49269286,
+      "peakNetWorth": 49269286,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 17.967,
+      "losses": 8,
+      "collected": 62,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 28.417
+        },
+        {
+          "stage": 2,
+          "time": 50.167
+        },
+        {
+          "stage": 3,
+          "time": 78.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-32",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 9305264,
+      "netWorth": 12080264,
+      "peakNetWorth": 12080264,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics"
+      ],
+      "firstPurchase": 12,
+      "losses": 14,
+      "collected": 63,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 30.05
+        },
+        {
+          "stage": 2,
+          "time": 60.4
+        },
+        {
+          "stage": 3,
+          "time": 87.4
+        }
+      ]
+    },
+    {
+      "seed": "balance-33",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 18359893,
+      "netWorth": 46134893,
+      "peakNetWorth": 46134893,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 17.967,
+      "losses": 10,
+      "collected": 63,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 30.017
+        },
+        {
+          "stage": 2,
+          "time": 57.383
+        },
+        {
+          "stage": 3,
+          "time": 79.417
+        }
+      ]
+    },
+    {
+      "seed": "balance-34",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 29325874,
+      "netWorth": 32100874,
+      "peakNetWorth": 37791758,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics"
+      ],
+      "firstPurchase": 17.967,
+      "losses": 9,
+      "collected": 61,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 28.367
+        },
+        {
+          "stage": 2,
+          "time": 61.667
+        },
+        {
+          "stage": 3,
+          "time": 79.767
+        }
+      ]
+    },
+    {
+      "seed": "balance-35",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 30917947,
+      "netWorth": 58692947,
+      "peakNetWorth": 65331334,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 12,
+      "losses": 9,
+      "collected": 63,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 45.95
+        },
+        {
+          "stage": 3,
+          "time": 74.067
+        }
+      ]
+    },
+    {
+      "seed": "balance-36",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 41234032,
+      "netWorth": 69009032,
+      "peakNetWorth": 69009032,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 12,
+      "losses": 10,
+      "collected": 66,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 28.3
+        },
+        {
+          "stage": 2,
+          "time": 51.55
+        },
+        {
+          "stage": 3,
+          "time": 76.467
+        }
+      ]
+    },
+    {
+      "seed": "balance-37",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 8499207,
+      "netWorth": 86274207,
+      "peakNetWorth": 86274207,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 8,
+      "collected": 63,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 28.367
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 70.233
+        }
+      ]
+    },
+    {
+      "seed": "balance-38",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 21126541,
+      "netWorth": 48901541,
+      "peakNetWorth": 48901541,
+      "stage": 3,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai"
+      ],
+      "firstPurchase": 17.967,
+      "losses": 10,
+      "collected": 66,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 29.367
+        },
+        {
+          "stage": 2,
+          "time": 51.817
+        },
+        {
+          "stage": 3,
+          "time": 75
+        }
+      ]
+    },
+    {
+      "seed": "balance-39",
+      "policy": "ordinary",
+      "elapsed": 90,
+      "cash": 151647429,
+      "netWorth": 229422429,
+      "peakNetWorth": 229422429,
+      "stage": 4,
+      "assets": [
+        "coffee",
+        "shop",
+        "logistics",
+        "ai",
+        "tower"
+      ],
+      "firstPurchase": 12,
+      "losses": 5,
+      "collected": 72,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 22.633
+        },
+        {
+          "stage": 2,
+          "time": 42.55
+        },
+        {
+          "stage": 3,
+          "time": 61.417
+        },
+        {
+          "stage": 4,
+          "time": 81.317
+        }
+      ]
+    },
+    {
+      "seed": "balance-00",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-01",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-02",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-03",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-04",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-05",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-06",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-07",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-08",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-09",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-10",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-11",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-12",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-13",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-14",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-15",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-16",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-17",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-18",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-19",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-20",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-21",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-22",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-23",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-24",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-25",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-26",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-27",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-28",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-29",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-30",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-31",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-32",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-33",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-34",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-35",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-36",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-37",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-38",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-39",
+      "policy": "cash-only",
+      "elapsed": 90,
+      "cash": 121110000,
+      "netWorth": 121110000,
+      "peakNetWorth": 121110000,
+      "stage": 4,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 0,
+      "collected": 83,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 26.083
+        },
+        {
+          "stage": 2,
+          "time": 48.067
+        },
+        {
+          "stage": 3,
+          "time": 68.3
+        },
+        {
+          "stage": 4,
+          "time": 86.95
+        }
+      ]
+    },
+    {
+      "seed": "balance-00",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 35330,
+      "netWorth": 60330,
+      "peakNetWorth": 71856,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 71.2,
+      "losses": 36,
+      "collected": 26,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-01",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 36969,
+      "netWorth": 61969,
+      "peakNetWorth": 94327,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 40.583,
+      "losses": 31,
+      "collected": 30,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-02",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 65946,
+      "netWorth": 90946,
+      "peakNetWorth": 90946,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 61.417,
+      "losses": 31,
+      "collected": 33,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-03",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 41957,
+      "netWorth": 66957,
+      "peakNetWorth": 84159,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 66.35,
+      "losses": 33,
+      "collected": 36,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-04",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 42001,
+      "netWorth": 67001,
+      "peakNetWorth": 83551,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 56.367,
+      "losses": 29,
+      "collected": 27,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-05",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 52927,
+      "netWorth": 77927,
+      "peakNetWorth": 97052,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 40.583,
+      "losses": 32,
+      "collected": 34,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-06",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 155698,
+      "netWorth": 180698,
+      "peakNetWorth": 228024,
+      "stage": 1,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 45.95,
+      "losses": 30,
+      "collected": 39,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 72.15
+        }
+      ]
+    },
+    {
+      "seed": "balance-07",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 37660,
+      "netWorth": 62660,
+      "peakNetWorth": 80612,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 40.583,
+      "losses": 32,
+      "collected": 31,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-08",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 45058,
+      "netWorth": 70058,
+      "peakNetWorth": 93543,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 40.583,
+      "losses": 27,
+      "collected": 24,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-09",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 268089,
+      "netWorth": 543089,
+      "peakNetWorth": 543089,
+      "stage": 1,
+      "assets": [
+        "coffee",
+        "shop"
+      ],
+      "firstPurchase": 12,
+      "losses": 22,
+      "collected": 35,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 69.483
+        }
+      ]
+    },
+    {
+      "seed": "balance-10",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 21468,
+      "netWorth": 46468,
+      "peakNetWorth": 46468,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 85.15,
+      "losses": 35,
+      "collected": 26,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-11",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 178365,
+      "netWorth": 203365,
+      "peakNetWorth": 226794,
+      "stage": 1,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 35.1,
+      "losses": 23,
+      "collected": 32,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 83.717
+        }
+      ]
+    },
+    {
+      "seed": "balance-12",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 59096,
+      "netWorth": 84096,
+      "peakNetWorth": 84096,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 66.35,
+      "losses": 29,
+      "collected": 35,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-13",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 53903,
+      "netWorth": 78903,
+      "peakNetWorth": 83855,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 40.583,
+      "losses": 33,
+      "collected": 31,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-14",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 29185,
+      "netWorth": 54185,
+      "peakNetWorth": 98557,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 17.967,
+      "losses": 30,
+      "collected": 32,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-15",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 52134,
+      "netWorth": 77134,
+      "peakNetWorth": 98122,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 35.1,
+      "losses": 26,
+      "collected": 33,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-16",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 100706,
+      "netWorth": 125706,
+      "peakNetWorth": 147688,
+      "stage": 1,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 35.1,
+      "losses": 28,
+      "collected": 27,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 83.033
+        }
+      ]
+    },
+    {
+      "seed": "balance-17",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 114117,
+      "netWorth": 139117,
+      "peakNetWorth": 139117,
+      "stage": 1,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 40.583,
+      "losses": 24,
+      "collected": 32,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 86.05
+        }
+      ]
+    },
+    {
+      "seed": "balance-18",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 34081,
+      "netWorth": 59081,
+      "peakNetWorth": 74628,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 40.583,
+      "losses": 32,
+      "collected": 36,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-19",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 627614,
+      "netWorth": 902614,
+      "peakNetWorth": 970085,
+      "stage": 1,
+      "assets": [
+        "coffee",
+        "shop"
+      ],
+      "firstPurchase": 17.967,
+      "losses": 20,
+      "collected": 37,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 53.283
+        }
+      ]
+    },
+    {
+      "seed": "balance-20",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 71282,
+      "netWorth": 96282,
+      "peakNetWorth": 96282,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 66.35,
+      "losses": 23,
+      "collected": 32,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-21",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 295187,
+      "netWorth": 320187,
+      "peakNetWorth": 440128,
+      "stage": 1,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 23.783,
+      "losses": 27,
+      "collected": 40,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 74.067
+        }
+      ]
+    },
+    {
+      "seed": "balance-22",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 25200,
+      "netWorth": 50200,
+      "peakNetWorth": 66856,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 66.35,
+      "losses": 39,
+      "collected": 30,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-23",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 63253,
+      "netWorth": 338253,
+      "peakNetWorth": 338253,
+      "stage": 1,
+      "assets": [
+        "coffee",
+        "shop"
+      ],
+      "firstPurchase": 23.783,
+      "losses": 24,
+      "collected": 39,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 78.767
+        }
+      ]
+    },
+    {
+      "seed": "balance-24",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 101972,
+      "netWorth": 376972,
+      "peakNetWorth": 376972,
+      "stage": 1,
+      "assets": [
+        "coffee",
+        "shop"
+      ],
+      "firstPurchase": 29.5,
+      "losses": 28,
+      "collected": 35,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 60.7
+        }
+      ]
+    },
+    {
+      "seed": "balance-25",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 77834,
+      "netWorth": 102834,
+      "peakNetWorth": 102834,
+      "stage": 1,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 56.367,
+      "losses": 24,
+      "collected": 31,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 88.733
+        }
+      ]
+    },
+    {
+      "seed": "balance-26",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 21245,
+      "netWorth": 21245,
+      "peakNetWorth": 33094,
+      "stage": 0,
+      "assets": [],
+      "firstPurchase": null,
+      "losses": 33,
+      "collected": 30,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-27",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 325397,
+      "netWorth": 350397,
+      "peakNetWorth": 350397,
+      "stage": 1,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 61.417,
+      "losses": 28,
+      "collected": 40,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 77.817
+        }
+      ]
+    },
+    {
+      "seed": "balance-28",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 33849,
+      "netWorth": 58849,
+      "peakNetWorth": 81923,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 40.583,
+      "losses": 32,
+      "collected": 29,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-29",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 100447,
+      "netWorth": 375447,
+      "peakNetWorth": 375447,
+      "stage": 1,
+      "assets": [
+        "coffee",
+        "shop"
+      ],
+      "firstPurchase": 29.5,
+      "losses": 24,
+      "collected": 39,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 68.3
+        }
+      ]
+    },
+    {
+      "seed": "balance-30",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 211007,
+      "netWorth": 236007,
+      "peakNetWorth": 263888,
+      "stage": 1,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 23.783,
+      "losses": 23,
+      "collected": 35,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 79.383
+        }
+      ]
+    },
+    {
+      "seed": "balance-31",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 415015,
+      "netWorth": 440015,
+      "peakNetWorth": 440015,
+      "stage": 1,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 35.1,
+      "losses": 29,
+      "collected": 40,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 74.067
+        }
+      ]
+    },
+    {
+      "seed": "balance-32",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 42971,
+      "netWorth": 67971,
+      "peakNetWorth": 89711,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 45.95,
+      "losses": 32,
+      "collected": 36,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-33",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 44081,
+      "netWorth": 69081,
+      "peakNetWorth": 83877,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 29.5,
+      "losses": 30,
+      "collected": 30,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-34",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 30222,
+      "netWorth": 305222,
+      "peakNetWorth": 355587,
+      "stage": 1,
+      "assets": [
+        "coffee",
+        "shop"
+      ],
+      "firstPurchase": 40.583,
+      "losses": 27,
+      "collected": 31,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 64.383
+        }
+      ]
+    },
+    {
+      "seed": "balance-35",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 67914,
+      "netWorth": 92914,
+      "peakNetWorth": 92914,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 29.5,
+      "losses": 28,
+      "collected": 32,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-36",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 59010,
+      "netWorth": 84010,
+      "peakNetWorth": 86720,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 35.1,
+      "losses": 29,
+      "collected": 29,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-37",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 39702,
+      "netWorth": 64702,
+      "peakNetWorth": 91164,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 35.1,
+      "losses": 33,
+      "collected": 36,
+      "stageTimes": []
+    },
+    {
+      "seed": "balance-38",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 427318,
+      "netWorth": 702318,
+      "peakNetWorth": 823611,
+      "stage": 1,
+      "assets": [
+        "coffee",
+        "shop"
+      ],
+      "firstPurchase": 35.1,
+      "losses": 27,
+      "collected": 39,
+      "stageTimes": [
+        {
+          "stage": 1,
+          "time": 52.25
+        }
+      ]
+    },
+    {
+      "seed": "balance-39",
+      "policy": "stationary",
+      "elapsed": 90,
+      "cash": 24008,
+      "netWorth": 49008,
+      "peakNetWorth": 77576,
+      "stage": 0,
+      "assets": [
+        "coffee"
+      ],
+      "firstPurchase": 51.2,
+      "losses": 35,
+      "collected": 28,
+      "stageTimes": []
+    }
+  ]
+}

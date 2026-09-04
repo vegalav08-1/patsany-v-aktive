@@ -1,0 +1,53 @@
+{
+  "source": "assets/source/friends.jpg",
+  "sourceWidth": 1280,
+  "sourceHeight": 960,
+  "coordinateConvention": "x/y от левого верхнего угла исходника; width/height в пикселях",
+  "note": "Приблизительные области голов. Перед выпуском визуально уточнить кадрирование и маску. Это не координаты автоматического распознавания лиц.",
+  "heroes": [
+    {
+      "id": "left",
+      "defaultName": "Партнёр 1",
+      "description": "Человек слева",
+      "crop": {
+        "x": 25,
+        "y": 145,
+        "width": 290,
+        "height": 405
+      }
+    },
+    {
+      "id": "back",
+      "defaultName": "Партнёр 2",
+      "description": "Человек сзади",
+      "crop": {
+        "x": 329,
+        "y": 267,
+        "width": 170,
+        "height": 223
+      }
+    },
+    {
+      "id": "center",
+      "defaultName": "Партнёр 3",
+      "description": "Человек по центру на переднем плане",
+      "crop": {
+        "x": 519,
+        "y": 270,
+        "width": 286,
+        "height": 411
+      }
+    },
+    {
+      "id": "right",
+      "defaultName": "Партнёр 4",
+      "description": "Человек справа",
+      "crop": {
+        "x": 918,
+        "y": 254,
+        "width": 288,
+        "height": 360
+      }
+    }
+  ]
+}

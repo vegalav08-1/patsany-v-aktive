@@ -1,0 +1,86 @@
+[
+  {
+    "browser": "chromium",
+    "prefix": "/",
+    "fullActiveSeconds": 90,
+    "testHookAbsent": true,
+    "challengePathCorrect": true,
+    "png": {
+      "bytes": 312613,
+      "signature": [
+        137,
+        80,
+        78,
+        71,
+        13,
+        10,
+        26,
+        10
+      ]
+    },
+    "errors": []
+  },
+  {
+    "browser": "chromium",
+    "prefix": "/business-game/",
+    "fullActiveSeconds": 90,
+    "testHookAbsent": true,
+    "challengePathCorrect": true,
+    "png": {
+      "bytes": 312613,
+      "signature": [
+        137,
+        80,
+        78,
+        71,
+        13,
+        10,
+        26,
+        10
+      ]
+    },
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "prefix": "/",
+    "fullActiveSeconds": 90,
+    "testHookAbsent": true,
+    "challengePathCorrect": true,
+    "png": {
+      "bytes": 416527,
+      "signature": [
+        137,
+        80,
+        78,
+        71,
+        13,
+        10,
+        26,
+        10
+      ]
+    },
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "prefix": "/business-game/",
+    "fullActiveSeconds": 90,
+    "testHookAbsent": true,
+    "challengePathCorrect": true,
+    "png": {
+      "bytes": 416527,
+      "signature": [
+        137,
+        80,
+        78,
+        71,
+        13,
+        10,
+        26,
+        10
+      ]
+    },
+    "errors": []
+  }
+]

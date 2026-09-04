@@ -1,0 +1,66 @@
+[
+  {
+    "width": 360,
+    "height": 640,
+    "menuFit": {
+      "scroll": 360,
+      "client": 360,
+      "height": 640,
+      "viewport": 640
+    },
+    "errors": [],
+    "result": {
+      "capital": 236534590.6571473,
+      "stage": 4,
+      "time": 90
+    }
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "menuFit": {
+      "scroll": 390,
+      "client": 390,
+      "height": 844,
+      "viewport": 844
+    },
+    "errors": [],
+    "result": {
+      "capital": 236534590.6571473,
+      "stage": 4,
+      "time": 90
+    }
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "menuFit": {
+      "scroll": 430,
+      "client": 430,
+      "height": 932,
+      "viewport": 932
+    },
+    "errors": [],
+    "result": {
+      "capital": 236534590.6571473,
+      "stage": 4,
+      "time": 90
+    }
+  },
+  {
+    "width": 1366,
+    "height": 768,
+    "menuFit": {
+      "scroll": 1366,
+      "client": 1366,
+      "height": 768,
+      "viewport": 768
+    },
+    "errors": [],
+    "result": {
+      "capital": 236534590.6571473,
+      "stage": 4,
+      "time": 90
+    }
+  }
+]

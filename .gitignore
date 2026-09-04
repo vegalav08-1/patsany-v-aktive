@@ -1,0 +1,13 @@
+node_modules/
+dist/
+dist-prefixed/
+business-game-dist.zip
+playwright-report/
+test-results/
+.DS_Store
+.env
+.env.*
+assets/source/friends.jpg
+reports/*.png
+reports/*.webp
+reports/*.jpg
