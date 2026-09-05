@@ -1,0 +1,46 @@
+name: Prepare 3D resources
+on:
+  push:
+    branches: [kantemirovskaya-3d-v1]
+    paths: ['.github/workflows/kante-resources.yml']
+permissions:
+  contents: read
+jobs:
+  resources:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fetch pinned renderer and build tool
+        run: |
+          mkdir -p resource-output/vendor resource-output/geography
+          npm install --prefix /tmp/kante-deps --no-audit --no-fund three@0.170.0 esbuild@0.25.0
+          cp /tmp/kante-deps/node_modules/three/build/three.module.min.js resource-output/vendor/
+          cp /tmp/kante-deps/node_modules/three/LICENSE resource-output/vendor/THREE-LICENSE.txt
+          cp /tmp/kante-deps/node_modules/@esbuild/linux-x64/bin/esbuild resource-output/vendor/esbuild
+          cp -r public/assets resource-output/existing-assets
+      - name: Fetch geographic evidence
+        shell: python
+        run: |
+          import urllib.request, json, time
+          from pathlib import Path
+          result=[]
+          urls=[('osm.xml','https://api.openstreetmap.org/api/0.6/map?bbox=37.6520,55.6320,37.6572,55.6352'),('reverse.json','https://nominatim.openstreetmap.org/reverse?lat=55.633587&lon=37.654592&format=jsonv2&zoom=18')]
+          for name,url in urls:
+            try:
+              req=urllib.request.Request(url,headers={'User-Agent':'KantemirovskayaPrototype/1.0 (one-time geographic reference)'})
+              with urllib.request.urlopen(req,timeout=35) as r:
+                body=r.read()
+              Path('resource-output/geography/'+name).write_bytes(body)
+              result.append({'url':url,'file':name,'bytes':len(body),'ok':True})
+            except Exception as e:
+              result.append({'url':url,'ok':False,'error':str(e)})
+            time.sleep(1)
+          Path('resource-output/geography/sources.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kante-prototype-resources
+          path: resource-output
+          retention-days: 3
