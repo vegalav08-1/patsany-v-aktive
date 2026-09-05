@@ -1,6 +1,11 @@
 name: Publish GitHub Pages
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'kantemirovskaya-v1/**'
+      - '.github/workflows/pages.yml'
 permissions:
   contents: read
 concurrency:
@@ -31,7 +36,19 @@ jobs:
       - run: npm run build
         env:
           VITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}/
-      - run: touch dist/.nojekyll
+      - name: Build the separate 3D game
+        run: |
+          npm --prefix kantemirovskaya-v1 test
+          npm --prefix kantemirovskaya-v1 run build
+          mkdir -p dist/3d
+          cp -R kantemirovskaya-v1/dist/. dist/3d/
+          touch dist/.nojekyll
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kantemirovskaya-3d-production
+          path: kantemirovskaya-v1/dist
+          include-hidden-files: true
+          retention-days: 14
       - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
@@ -48,3 +65,26 @@ jobs:
     steps:
       - uses: actions/deploy-pages@v5
         id: deployment
+      - name: Verify the published site and local 3D assets
+        env:
+          SITE_URL: ${{ steps.deployment.outputs.page_url }}
+        shell: python
+        run: |
+          import os,time,urllib.request,json
+          base=os.environ['SITE_URL'].rstrip('/')+'/'
+          paths=['','3d/','3d/src/app.js','3d/src/map-data.js','3d/vendor/three.module.min.js','3d/assets/head-center.webp']
+          verified=[]
+          for path in paths:
+            for attempt in range(8):
+              try:
+                request=urllib.request.Request(base+path,headers={'Cache-Control':'no-cache'})
+                with urllib.request.urlopen(request,timeout=30) as response:
+                  data=response.read()
+                  assert response.status==200
+                if path=='3d/': assert 'Кантемировская 3D' in data.decode('utf-8')
+                verified.append({'url':base+path,'status':200,'bytes':len(data)})
+                break
+              except Exception:
+                if attempt==7: raise
+                time.sleep(8)
+          print(json.dumps({'verified_public_3d_url':base+'3d/','checks':verified},ensure_ascii=False,indent=2))
