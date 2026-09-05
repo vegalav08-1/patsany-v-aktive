@@ -1,0 +1,47 @@
+name: Realism material references
+on:
+  push:
+    branches: [visual-upgrade-v1-1]
+    paths: ['.github/workflows/realism-resources.yml']
+permissions:
+  contents: read
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          mkdir -p output/materials output/vendor output/reference
+          npm install --prefix /tmp/renderer --no-audit --no-fund three@0.170.0 esbuild@0.25.0
+          cp -r /tmp/renderer/node_modules/three/examples/jsm output/vendor/addons
+      - name: Download licensed source files
+        shell: python
+        run: |
+          from pathlib import Path
+          import urllib.request,json
+          def get(url):
+            req=urllib.request.Request(url,headers={'User-Agent':'KantemirovskayaGame/1.1 (CC0 material reference)'})
+            return urllib.request.urlopen(req,timeout=25).read()
+          records=[]
+          for label,asset in [('asphalt','asphalt_02'),('grass','aerial_grass_rock'),('pavers','concrete_pavers_01'),('plaster','plastered_wall_04'),('bark','bark_brown_02')]:
+            try:
+              info=json.loads(get('https://api.polyhaven.com/files/'+asset))
+              for key,name in [('diff','color'),('nor_gl','normal'),('arm','arm')]:
+                entry=info.get(key,{}).get('1k',{}).get('jpg')
+                if entry:
+                  path=label+'-'+name+'.jpg';Path('output/materials/'+path).write_bytes(get(entry['url']));records.append({'file':path,'source':entry['url'],'license':'CC0-1.0'})
+            except Exception as e:records.append({'asset':asset,'error':str(e)})
+          for name,url in [('daylight.hdr','https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/kloppenheim_06_puresky_1k.hdr'),('base.obj','https://raw.githubusercontent.com/makehumancommunity/makehuman/v1.3.0/makehuman/data/3dobjs/base.obj'),('MAKEHUMAN-LICENSE.md','https://raw.githubusercontent.com/makehumancommunity/makehuman/v1.3.0/LICENSE.md')]:
+            try:Path('output/reference/'+name).write_bytes(get(url));records.append({'file':name,'source':url})
+            except Exception as e:records.append({'file':name,'error':str(e)})
+          Path('output/sources.json').write_text(json.dumps(records,indent=2))
+          print(json.dumps(records,indent=2))
+      - uses: actions/upload-artifact@v4
+        with:
+          name: realism-materials
+          path: output
+          retention-days: 7

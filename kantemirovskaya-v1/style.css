@@ -4,3 +4,7 @@
 @media(max-height:690px) and (max-width:700px){.menu-panel{padding:16px 19px;max-height:62dvh}.menu-panel h1{font-size:33px;margin:10px 0 5px}.intro{margin-bottom:10px!important;font-size:10px!important}.hero-option{height:51px}.name-field{margin:5px 0 9px}.menu-bottom{margin-top:7px}.menu-meta{margin-top:8px}.menu-panel .eyebrow{font-size:6px}.result-panel{max-height:76dvh}#mission{top:119px}#level-banner{top:35%}#actions,#joystick{bottom:107px}}
 @media(max-height:520px) and (min-width:600px){#brand{top:12px;left:12px}.menu-panel{width:340px;right:15px;padding:20px;max-height:calc(100dvh - 24px)}.menu-panel h1{font-size:35px;margin:10px 0}.menu-panel h1 br{display:none}.intro{font-size:11px!important;margin:10px 0!important}.hero-option{height:49px}.menu-meta,.menu-bottom{margin-top:8px}.name-field{margin:5px 0 10px}.menu-panel .eyebrow{font-size:7px}#mission{top:130px}#actions{bottom:35px}#joystick{bottom:36px}#progress{width:280px;bottom:23px}#control-hint{bottom:100px}.result-panel{max-height:calc(100dvh - 24px);right:15px;padding:20px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* Keep the title legible against detailed facades and foliage. */
+#brand{padding:8px 12px 8px 8px;background:#f4f0e6e8;border:1px solid #fff7e5aa;border-radius:14px;box-shadow:0 5px 24px #203c2f12;backdrop-filter:blur(8px)}
+@media(max-width:699px){#scene-caption{display:none}#brand{max-width:calc(100vw - 30px)}}

@@ -11,3 +11,5 @@ assets/source/friends.jpg
 reports/*.png
 reports/*.webp
 reports/*.jpg
+kantemirovskaya-v1/reports/**/*.png
+kantemirovskaya-v1-dist.zip

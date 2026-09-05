@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-05T06:09:21.831Z",
+  "checks": [
+    "chromium menu 1280x800",
+    "chromium menu 390x844",
+    "chromium menu 360x640",
+    "chromium high renders",
+    "chromium low renders",
+    "chromium medium renders",
+    "chromium finish/restart after quality changes",
+    "webkit menu 390x844",
+    "webkit high renders",
+    "webkit low renders",
+    "webkit medium renders",
+    "webkit finish/restart after quality changes"
+  ],
+  "errors": [],
+  "physicalPhoneTested": false,
+  "chromiumScene": {
+    "calls": 347,
+    "triangles": 299540,
+    "geometries": 714,
+    "textures": 50
+  },
+  "webkitScene": {
+    "calls": 272,
+    "triangles": 263380,
+    "geometries": 690,
+    "textures": 49
+  },
+  "passed": true
+}

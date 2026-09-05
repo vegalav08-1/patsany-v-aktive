@@ -1,13 +1,16 @@
 {
   "name": "kantemirovskaya-3d-v1",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
     "dev": "npm run build && node scripts/serve.mjs",
     "preview": "node scripts/serve.mjs",
-    "test": "node --test tests/model.test.js"
+    "test": "node --test tests/model.test.js",
+    "test:graphics": "node tests/graphics.mjs"
   },
-  "engines": { "node": ">=20" }
+  "engines": {
+    "node": ">=20"
+  }
 }

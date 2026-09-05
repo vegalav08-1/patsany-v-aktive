@@ -1,0 +1,75 @@
+name: Realism browser QA
+on:
+  push:
+    branches: [visual-upgrade-v1-1]
+    paths: ['.github/workflows/realism-qa.yml', 'kantemirovskaya-v1/src/**', 'kantemirovskaya-v1/tests/**', 'kantemirovskaya-v1/style.css', 'kantemirovskaya-v1/index.html']
+permissions:
+  contents: read
+concurrency:
+  group: realism-qa
+  cancel-in-progress: true
+jobs:
+  inspect:
+    if: github.ref == 'refs/heads/visual-upgrade-v1-1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: visual-upgrade-v1-1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Connect the rendering entry point
+        run: python kantemirovskaya-v1/scripts/connect-renderer.py
+      - name: Set local import mapping and version metadata
+        shell: python
+        run: |
+          from pathlib import Path
+          import json
+          root=Path('kantemirovskaya-v1')
+          p=root/'index.html';s=p.read_text().replace('3D / 1.0','3D / 1.1').replace('версии 1.0','версии 1.1')
+          if 'type="importmap"' not in s:
+            s=s.replace('<script type="module"','<script type="importmap">{"imports":{"three":"./vendor/three.module.min.js"}}</script>\n<script type="module"')
+          p.write_text(s)
+          p=root/'scripts/build.mjs';s=p.read_text().replace("['index.html','style.css','src','vendor']","['index.html','style.css','src','vendor','licenses']");p.write_text(s)
+          p=root/'package.json';d=json.loads(p.read_text());d['version']='1.1.0';p.write_text(json.dumps(d,indent=2)+'\n')
+      - name: Commit only the reviewed 3D integration
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add kantemirovskaya-v1/src/app.js kantemirovskaya-v1/index.html kantemirovskaya-v1/scripts/build.mjs kantemirovskaya-v1/package.json
+          git diff --cached --quiet || git commit -m 'Connect the version 1.1 rendering pipeline'
+          git pull --rebase origin visual-upgrade-v1-1
+          git push origin HEAD:visual-upgrade-v1-1
+      - name: Build and unit tests
+        run: |
+          cd kantemirovskaya-v1
+          npm test
+          npm run build
+      - name: Install browser tools
+        run: |
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium webkit
+      - name: Start the production game
+        run: |
+          cd kantemirovskaya-v1
+          node scripts/serve.mjs > /tmp/realism-server.log 2>&1 &
+      - name: Capture the actual visual result
+        run: cd kantemirovskaya-v1 && python tests/visual.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: realism-visual-inspection
+          path: kantemirovskaya-v1/reports/visual
+          retention-days: 7
+      - name: Test mobile and desktop gameplay
+        run: cd kantemirovskaya-v1 && python tests/browser.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: realism-v11-project-and-QA
+          path: kantemirovskaya-v1
+          retention-days: 14
