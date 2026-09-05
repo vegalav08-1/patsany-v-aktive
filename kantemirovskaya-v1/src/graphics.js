@@ -10,6 +10,7 @@ export function mesh(g, geometry, material, x = 0, y = 0, z = 0, sx = 1, sy = 1,
   const m = new T.Mesh(geometry, typeof material === 'string' ? mat(material) : material);
   m.position.set(x, y, z); m.scale.set(sx, sy, sz); m.castShadow = true; m.receiveShadow = true; g.add(m); return m;
 }
+export function isSharedGeometry(g) { return [...geoms.values()].includes(g); }
 function geo(name, make) { if (!geoms.has(name)) geoms.set(name, make()); return geoms.get(name); }
 export const box = (g, m, x, y, z, w, h, d) => mesh(g, geo('box', () => new T.BoxGeometry()), m, x, y, z, w, h, d);
 export const sphere = (g, m, x, y, z, w, h = w, d = w) => mesh(g, geo('sphere', () => new T.SphereGeometry(1, 16, 12)), m, x, y, z, w, h, d);
@@ -30,12 +31,14 @@ export function label(text, bg = '#183f37', fg = '#fff7e8', w = 512, h = 128) {
 export function sign(g, text, x, y, z, w = 3.2, h = .7, ry = 0, bg) {
   const m = new T.Mesh(new T.PlaneGeometry(w, h), new T.MeshStandardMaterial({ map: label(text, bg), roughness: .75, side: T.DoubleSide })); m.position.set(x, y, z); m.rotation.y = ry; g.add(m); return m;
 }
-/** Merge stationary meshes by material, reducing mobile draw calls. */
-export function batchStatic(root) {
+/** Share materials within spatial cells so off-screen facades can be culled. */
+export function batchStatic(root, cellSize = 0) {
   root.updateMatrixWorld(true); const invRoot = root.matrixWorld.clone().invert(); const batches = new Map(), remove = [];
   root.traverse(o => {
     if (!o.isMesh || o.isInstancedMesh || Array.isArray(o.material) || o.userData.dynamic) return;
-    const k = o.material.uuid + ':' + o.castShadow;
+    const position = new T.Vector3().setFromMatrixPosition(o.matrixWorld).applyMatrix4(invRoot);
+    const cell = cellSize ? ':' + Math.floor(position.x / cellSize) + ':' + Math.floor(position.z / cellSize) : '';
+    const k = o.material.uuid + ':' + o.castShadow + cell;
     if (!batches.has(k)) batches.set(k, { material: o.material, shadow: o.castShadow, geometries: [] });
     const g = o.geometry.index ? o.geometry.toNonIndexed() : o.geometry.clone(); g.applyMatrix4(new T.Matrix4().multiplyMatrices(invRoot, o.matrixWorld)); batches.get(k).geometries.push(g); remove.push(o);
   });
