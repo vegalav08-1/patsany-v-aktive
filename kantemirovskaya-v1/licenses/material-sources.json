@@ -1,0 +1,78 @@
+[
+  {
+    "file": "asphalt-normal.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/asphalt_02/asphalt_02_nor_gl_1k.jpg",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "asphalt-arm.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/asphalt_02/asphalt_02_arm_1k.jpg",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "grass-normal.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/aerial_grass_rock/aerial_grass_rock_nor_gl_1k.jpg",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "grass-arm.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/aerial_grass_rock/aerial_grass_rock_arm_1k.jpg",
+    "license": "CC0-1.0"
+  },
+  {
+    "asset": "concrete_pavers_01",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "plaster-normal.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/plastered_wall_04/plastered_wall_04_nor_gl_1k.jpg",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "plaster-arm.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/plastered_wall_04/plastered_wall_04_arm_1k.jpg",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "bark-normal.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_nor_gl_1k.jpg",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "bark-arm.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_arm_1k.jpg",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "daylight.hdr",
+    "source": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/kloppenheim_06_puresky_1k.hdr"
+  },
+  {
+    "file": "base.obj",
+    "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/v1.3.0/makehuman/data/3dobjs/base.obj"
+  },
+  {
+    "file": "MAKEHUMAN-LICENSE.md",
+    "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/v1.3.0/LICENSE.md"
+  },
+  {
+    "file": "asphalt-color.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/asphalt_02/asphalt_02_diff_1k.jpg",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "grass-color.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/aerial_grass_rock/aerial_grass_rock_diff_1k.jpg",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "plaster-color.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/plastered_wall_04/plastered_wall_04_diff_1k.jpg",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "bark-color.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_diff_1k.jpg",
+    "license": "CC0-1.0"
+  }
+]
