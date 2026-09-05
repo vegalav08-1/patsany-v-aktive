@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1f3834">
+<title>Пацаны в активе — Кантемировская 3D</title>
+<link rel="icon" href="./assets/favicon.svg">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<canvas id="world" aria-label="Трёхмерный двор"></canvas>
+<div id="loading"><div class="loading-logo">П<span>/</span>А</div><p>Загружаем свой район…</p><small>КАНТЕМИРОВСКАЯ · 3D / 1.0</small></div>
+<header id="brand"><div class="brand-mark">П<span>/</span>А</div><div><b>ПАЦАНЫ В АКТИВЕ</b><span>КАНТЕМИРОВСКАЯ · 3D / 1.0</span></div></header>
+<main id="menu" class="panel menu-panel" hidden>
+<div class="eyebrow"><i></i> МОСКВА. ВАШ ДВОР. ВАШ СТАРТ.</div>
+<h1>Начинали<br>с <em>нулём.</em></h1>
+<p class="intro">Пять минут, чтобы превратить первые заказы в свой капитал.</p>
+<div class="select-caption"><span>ВЫБЕРИ СЕБЯ</span><span id="hero-number">03 / 04</span></div>
+<div id="hero-list" class="heroes"></div>
+<label class="name-field"><span>Имя в игре</span><input id="hero-name" maxlength="20" autocomplete="off" value="Партнёр 3"></label>
+<button id="start" class="primary">Начать с нуля <span>↗</span></button>
+<div class="menu-meta"><span>100 × 100 м</span><span>5 бизнесов</span><span>Без регистрации</span></div>
+<div class="menu-bottom"><button id="about-button" class="text-btn">Что внутри версии 1.0</button><button id="records-button" class="text-btn">Рекорды</button></div>
+</main>
+<div id="scene-caption"><b>ПРОЛЕТАРСКИЙ ПРОСПЕКТ, 18 К3</b><span>55.633587° N · 37.654592° E</span></div>
+<section id="hud" hidden>
+<div class="hud-top">
+<div class="cash-panel glass"><span class="micro">НАЛИЧНЫЕ</span><strong id="cash">0 ₽</strong><div><span id="rate">+0 ₽/с</span><span id="timer">05:00</span></div></div>
+<div class="top-right"><button id="pause" class="icon-btn glass" aria-label="Пауза">Ⅱ</button><button id="camera" class="icon-btn glass" aria-label="Развернуть камеру">↻</button></div>
+</div>
+<div id="mission" class="glass"><span id="mission-kicker">ПЕРВЫЙ КАПИТАЛ</span><b id="mission-title">Возьми заказ у стенда</b><span id="mission-note">Иди к золотому маркеру</span></div>
+<div id="minimap-wrap" class="glass"><canvas id="minimap" width="220" height="220" aria-label="Карта участка"></canvas><span>100 × 100 М <b>С ↑</b></span></div>
+<div id="target-label" hidden><span id="target-name"></span><b id="target-distance"></b></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="level-banner" hidden><span>НОВЫЙ УРОВЕНЬ</span><b id="level-title"></b><small id="level-clothes"></small></div>
+<div id="control-hint">Слева — движение. Справа — поворот камеры.</div>
+<div id="joystick" aria-label="Джойстик"><div class="joystick-axis">↑<span>↓</span></div><div id="stick"></div></div>
+<div id="actions">
+<button id="interact" class="primary" disabled><span id="action-text">Подойди к цели</span><span>↗</span></button>
+<button id="portfolio-button" class="secondary glass">Мои бизнесы <b id="owned-count">0 / 5</b></button>
+</div>
+<div id="progress" class="glass"><img id="hud-face" alt="Ваш герой"><div><span id="status-name">С нуля</span><b id="worth">Капитал: 0 ₽</b><div class="progress-track"><i id="progress-fill"></i></div></div><span id="level-number">01</span></div>
+</section>
+<div id="modal-layer" hidden><section id="modal" class="panel" role="dialog" aria-modal="true"><button id="modal-close" class="close-btn" aria-label="Закрыть">×</button><div id="modal-content"></div></section></div>
+<section id="results" class="panel result-panel" hidden>
+<div class="eyebrow"><i></i> ПЯТЬ МИНУТ СПУСТЯ</div>
+<h2>Начинал с нуля.<br><em>Нулей стало больше.</em></h2>
+<div class="result-hero"><img id="result-face" alt="Герой"><div><b id="result-name"></b><span id="result-status"></span></div></div>
+<span class="micro">ТВОЙ КАПИТАЛ</span><strong id="result-worth"></strong>
+<div class="result-stats"><div><b id="result-assets"></b><span>бизнесов</span></div><div><b id="result-income"></b><span>доход / сек.</span></div><div><b id="result-jobs"></b><span>заказов</span></div></div>
+<p id="personal-best"></p><button id="share" class="primary">Отправить пацанам <span>↗</span></button><button id="restart" class="secondary">Ещё один старт</button><button id="to-menu" class="text-btn">Выбрать другого героя</button>
+</section>
+<footer id="attribution"><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a><span>Геометрия по карте · фасады и бизнесы условные</span></footer>
+<noscript>Для игры нужен JavaScript и WebGL 2.</noscript>
+<script type="module" src="./src/app.js"></script>
+</body>
+</html>
