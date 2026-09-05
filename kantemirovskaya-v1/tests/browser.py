@@ -1,4 +1,4 @@
-import asyncio,json,traceback,os
+import asyncio,json,traceback
 from pathlib import Path
 from playwright.async_api import async_playwright
 OUT=Path('reports');OUT.mkdir(exist_ok=True)
@@ -25,6 +25,7 @@ async def main():
      for hero in range(4):
       await page.locator('.hero-option').nth(hero).click();await page.wait_for_timeout(150)
       await page.screenshot(path=str(OUT/f'hero-{hero}.png'))
+     await page.locator('.hero-option').nth(2).click()
     await page.locator('#start').click();await page.wait_for_timeout(750)
     check(f'{width} started',await page.evaluate('window.__test.state().mode')=='playing')
     old=await page.evaluate('window.__test.state().player')
@@ -32,10 +33,12 @@ async def main():
      r=await page.locator('#joystick').bounding_box();x=r['x']+r['width']/2;y=r['y']+r['height']/2
      client=await context.new_cdp_session(page)
      await client.send('Input.dispatchTouchEvent',{'type':'touchStart','touchPoints':[{'x':x,'y':y-29}]})
-     await page.wait_for_timeout(1100)
-     await client.send('Input.dispatchTouchEvent',{'type':'touchEnd','touchPoints':[]})
+     try:await page.wait_for_function('(z)=>Math.abs(window.__test.state().player.z-z)>.2',arg=old['z'],timeout=25000)
+     finally:await client.send('Input.dispatchTouchEvent',{'type':'touchEnd','touchPoints':[]})
     else:
-     await page.keyboard.down('w');await page.wait_for_timeout(1100);await page.keyboard.up('w')
+     await page.keyboard.down('w')
+     try:await page.wait_for_function('(z)=>Math.abs(window.__test.state().player.z-z)>.2',arg=old['z'],timeout=25000)
+     finally:await page.keyboard.up('w')
     new=await page.evaluate('window.__test.state().player');check(f'{width} movement',abs(new['z']-old['z'])>.2)
     await page.evaluate('window.__test.warp(-28,35)');await page.locator('#interact').click()
     check(f'{width} job started',await page.evaluate('!!window.__test.state().job'))
@@ -49,8 +52,7 @@ async def main():
     await page.locator('#modal-close').click();await page.evaluate('window.__test.advance(10)')
     check(f'{width} passive income',await page.evaluate('window.__test.state().cash')>=7000)
     if width in [1366,390]:
-     await page.evaluate('window.__test.warp(-22,24)')
-     await page.locator('#camera').click()
+     await page.evaluate('window.__test.warp(-22,24)');await page.locator('#camera').click()
      for stage,amount in enumerate([0,30000,150000,600000,2500000]):
       await page.evaluate('(v)=>window.__test.funds(v)',amount);await page.wait_for_timeout(800)
       await page.screenshot(path=str(OUT/f'{width}-stage-{stage}.png'))
@@ -63,6 +65,8 @@ async def main():
     check(f'{width} no JS exceptions',not errs)
    except Exception as e:
     report['errors'].append(f'{width}: {e}');await page.screenshot(path=str(OUT/f'{width}-failure.png'));report['traceback']=traceback.format_exc()
+    try:report[f'diagnostic-{width}']=await page.evaluate('({state:window.__test?.state(),focused:document.activeElement?.outerHTML,hidden:document.hidden})')
+    except:pass
    finally:await context.close()
   ctx=await browser.new_context(viewport={'width':390,'height':844});page=await ctx.new_page()
   try:
