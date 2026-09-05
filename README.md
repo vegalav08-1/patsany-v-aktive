@@ -2,6 +2,8 @@
 
 Мобильная аркада на 90 секунд: четыре друга с настоящими фотографическими головами собирают выручку, покупают пять бизнесов и проходят пять визуальных этапов. Один палец, три дорожки, каждый забег с нуля. TypeScript + Vite + Canvas 2D, без серверной части и runtime-зависимостей.
 
+**[Играть — Пацаны в активе](https://vegalav08-1.github.io/patsany-v-aktive/)**. Эту ссылку можно отправлять друзьям: игра открывается в браузере без регистрации и установки. После забега «Поделиться» создаёт PNG результата и ссылку на ту же трассу.
+
 Выполненные проверки и ограничения среды: [итоговый отчёт](reports/QA.md).
 
 ## Запуск
@@ -60,12 +62,12 @@ npm run dev
 
 ## GitHub Pages
 
-Репозиторий игры: [vegalav08-1/patsany-v-aktive](https://github.com/vegalav08-1/patsany-v-aktive), default branch — `main`. Он создан закрытым по запросу владельца. Публичной публикации игры не выполнялось: для открытия сайта с лицами требуется отдельное разрешение владельца. Приватность автоматически не меняется.
+Репозиторий игры: [vegalav08-1/patsany-v-aktive](https://github.com/vegalav08-1/patsany-v-aktive), default branch — `main`. Репозиторий открыт, игра опубликована с разрешения владельца: **https://vegalav08-1.github.io/patsany-v-aktive/**. [Успешный запуск публикации](https://github.com/vegalav08-1/patsany-v-aktive/actions/runs/33937101500).
 
-После разрешения публикации:
+Для обновления опубликованной игры:
 
 1. Используйте проверенный код ветки `main`, включая `public/assets` и lockfile. Не включайте `assets/source/friends.jpg`, `node_modules`, тестовые скриншоты и секреты. Папка `dist` собирается в CI.
-2. В репозитории выберите **Settings → Pages → Source: GitHub Actions**. При необходимости задайте approval для окружения `github-pages`.
+2. В **Settings → Pages** уже настроен источник **GitHub Actions**. При необходимости задайте approval для окружения `github-pages`.
 3. Запустите **Actions → Publish GitHub Pages → Run workflow** на default branch. Сначала пройдут typecheck, модельные, браузерные и production-проверки на корне и в подкаталоге, затем сборка с реальным путём Pages и публикация. Фактический адрес появится в выполненном deploy job и в Settings → Pages.
 
 Workflow `.github/workflows/pages.yml` запускается только вручную и только с default branch; push и pull request выполняют только проверки из `checks.yml`. Build job получает `contents: read` и `pages: read` для чтения настроек сайта. Права записи Pages и OIDC есть только у deploy job. Личные токены не используются. Официальный процесс: [GitHub Pages с собственным workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages); [права чтения настроек Pages](https://docs.github.com/en/rest/pages/pages#get-a-github-pages-site).

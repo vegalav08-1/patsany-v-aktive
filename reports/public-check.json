@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-09-05T02:01:48.611Z",
+  "checks": [
+    {
+      "browser": "chromium",
+      "version": "151.0.7922.34",
+      "url": "https://vegalav08-1.github.io/patsany-v-aktive/",
+      "httpStatus": 200,
+      "heads": [
+        {
+          "loaded": true,
+          "src": "https://vegalav08-1.github.io/patsany-v-aktive/assets/head-left.webp"
+        },
+        {
+          "loaded": true,
+          "src": "https://vegalav08-1.github.io/patsany-v-aktive/assets/head-back.webp"
+        },
+        {
+          "loaded": true,
+          "src": "https://vegalav08-1.github.io/patsany-v-aktive/assets/head-center.webp"
+        },
+        {
+          "loaded": true,
+          "src": "https://vegalav08-1.github.io/patsany-v-aktive/assets/head-right.webp"
+        }
+      ],
+      "pauseVerified": true,
+      "testHookAbsent": true,
+      "errors": [],
+      "fullRunSeconds": 90,
+      "challengeText": "Я собрал 15 663 ₽ за 90 секунд в “Пацаны в активе”. Твой ход: https://vegalav08-1.github.io/patsany-v-aktive/?seed=public-verification&v=1",
+      "png": {
+        "bytes": 261609,
+        "signature": [
+          137,
+          80,
+          78,
+          71,
+          13,
+          10,
+          26,
+          10
+        ]
+      }
+    },
+    {
+      "browser": "webkit",
+      "version": "26.5",
+      "url": "https://vegalav08-1.github.io/patsany-v-aktive/",
+      "httpStatus": 200,
+      "heads": [
+        {
+          "loaded": true,
+          "src": "https://vegalav08-1.github.io/patsany-v-aktive/assets/head-left.webp"
+        },
+        {
+          "loaded": true,
+          "src": "https://vegalav08-1.github.io/patsany-v-aktive/assets/head-back.webp"
+        },
+        {
+          "loaded": true,
+          "src": "https://vegalav08-1.github.io/patsany-v-aktive/assets/head-center.webp"
+        },
+        {
+          "loaded": true,
+          "src": "https://vegalav08-1.github.io/patsany-v-aktive/assets/head-right.webp"
+        }
+      ],
+      "pauseVerified": true,
+      "testHookAbsent": true,
+      "errors": []
+    }
+  ]
+}
