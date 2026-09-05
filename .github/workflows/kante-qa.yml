@@ -1,0 +1,73 @@
+name: Kantemirovskaya 3D QA
+on:
+  push:
+    branches: [kantemirovskaya-3d-v1]
+    paths:
+      - 'kantemirovskaya-v1/**'
+      - '.github/workflows/kante-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: kante-qa-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check frozen resources
+        id: resources
+        run: |
+          if test -f kantemirovskaya-v1/vendor/three.module.min.js; then
+            echo 'needed=false' >> "$GITHUB_OUTPUT"
+          else
+            echo 'needed=true' >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/download-artifact@v4
+        if: steps.resources.outputs.needed == 'true'
+        with:
+          name: kante-prototype-resources
+          path: /tmp/kante-resources
+          github-token: ${{ github.token }}
+          run-id: 33938180951
+      - name: Freeze already retrieved geographic and renderer resources
+        if: steps.resources.outputs.needed == 'true'
+        run: |
+          python kantemirovskaya-v1/scripts/prepare.py /tmp/kante-resources
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add kantemirovskaya-v1/vendor kantemirovskaya-v1/public/assets kantemirovskaya-v1/src/map-data.js
+          git commit -m '[skip ci] Freeze attributed map and local game dependencies'
+          git push origin HEAD:${{ github.ref_name }}
+      - name: Unit tests and production build
+        working-directory: kantemirovskaya-v1
+        run: |
+          npm test
+          npm run build
+      - name: Install browser test tools
+        run: |
+          python -m pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium webkit
+      - name: Test real browser and take screenshots
+        working-directory: kantemirovskaya-v1
+        env:
+          LIBGL_ALWAYS_SOFTWARE: '1'
+        run: |
+          node scripts/serve.mjs > /tmp/kante-server.log 2>&1 &
+          sleep 2
+          python tests/browser.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: kantemirovskaya-v1-qa
+          path: kantemirovskaya-v1/
+          include-hidden-files: true
+          retention-days: 7
